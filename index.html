@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiraajHub - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">SiraajHub</a>
+            
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="tafsiir.html" class="nav-link">Tafsiir</a>
+                <a href="Read Qur'aan.html" class="nav-link">Read Qur'aan</a>
+                <a href="Schedule.html" class="nav-link">Schedule</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button id="dark-mode-toggle" class="dark-btn">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="home-section" class="main-section">
+            <div class="hero-section">
+                <h2>Your Digital Companion For Reading <br> and Understanding the Quran.</h2>
+                <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <p>Welcome to a modern Islamic learning platform <br> where you can read the Qur’an, explore its Tafsir, and follow a structured study plan. <br> Learn with ease, grow in understanding, and stay consistent every day.</p>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="tafsiir-section" class="main-section">
+            <h2 class="section-title">The Holy Quran (Tafsiir)</h2>
+            <div class="search-box">
+                <input type="text" id="tafsiir-search" placeholder="search Surah of tafsiir...">
+                <button onclick="filterSurahs('tafsiir')">search</button>
+            </div>
+            
+            <div id="tafsiir-grid" class="surah-grid"></div>
+            <button class="see-all-btn" id="btn-see-tafsiir" onclick="showAllSurahs('tafsiir')">See All</button>
+
+            <div id="single-tafsiir-container" class="single-view-box">
+                <button class="close-btn" onclick="closeView('tafsiir')">Xir Tafsiirka</button>
+                <h2 id="tafsiir-surah-title" class="surah-main-title"></h2>
+                <div id="tafsiir-verses-container" class="verses-list"></div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="read-section" class="main-section">
+            <h2 class="section-title">Read the Holy Quran</h2>
+            <div class="search-box">
+                <input type="text" id="read-search" placeholder="Search Surah of read...">
+                <button onclick="filterSurahs('read')">search</button>
+            </div>
+
+            <div id="read-grid" class="surah-grid"></div>
+            <button class="see-all-btn" id="btn-see-read" onclick="showAllSurahs('read')">See All</button>
+
+            <div id="single-read-container" class="single-view-box">
+                <button class="close-btn" onclick="closeView('read')">Xir Akhriska</button>
+                <h2 id="read-surah-title" class="surah-main-title"></h2>
+                <div id="read-verses-container" class="verses-list pure-arabic"></div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="jadwal-section" class="main-section">
+            <h2 class="section-title">🏆 Plans To Memorize The Holy Quran</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: var(--text-muted);">Choose a structured plan that fits your lifestyle to memorize the Quran consistently.</p>
+            
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Number of Pages</th>
+                            <th>Days Per Week</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <section id="contact-section" class="main-section">
+            <h2 class="section-title">Quran Help Center</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Welcome to the Quran Help Center. We are here to support and guide you in your journey of learning and understanding the Holy Quran. Feel free to reach out to us anytime.</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div id="form-error" class="error-msg"></div>
+                    <div id="form-success" class="success-msg">Fariintaada waa la diray, Waad ku mahadsantahay!</div>
+                    <input type="text" id="fullname" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Now</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pro-footer">
+        <div class="footer-container">
+            
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">SiraajHub</a>
+                <p class="brand-desc">We are dedicated to providing a seamless digital companion experience for reading, understanding, and memorizing the Holy Quran.</p>
+            </div>
+
+            <div class="footer-box">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right link-icon"></i> Home</a></li>
+                    <li><a href="tafsiir.html"><i class="fa-solid fa-chevron-right link-icon"></i> Tafsiir</a></li>
+                    <li><a href="Read Qur'aan.html"><i class="fa-solid fa-chevron-right link-icon"></i> Read Qur'aan</a></li>
+                    <li><a href="Schedule.html"><i class="fa-solid fa-chevron-right link-icon"></i> Schedule</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right link-icon"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box info-box">
+                <h4 class="footer-title">Let's talk</h4>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <span><a href="mailto:info@SiraajHub.com">Nurabdi2776@gmail.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <span><a href="tel:+252611518376">+252 611518376</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp contact-icon wa-color"></i>
+                    <span><a href="https://wa.me/252611518376" target="_blank" class="wa-chat">Chat with us on WhatsApp</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot contact-icon"></i>
+                    <span>Mogadishu, Somalia</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock contact-icon"></i>
+                    <span class="hours-text">Mon - Fri | 8:00 AM - 6:00 PM</span>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h4 class="footer-title">Follow Us</h4>
+                <p class="social-text">Stay connected with us across our social handles.</p>
+                <div class="social-wrapper">
+                    <a href="https://www.facebook.com/nur.apdi.2025/" target="_blank" class="social-btn facebook" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/252611518376" target="_blank" class="social-btn whatsapp" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/Dev-NurAbdi" target="_blank" class="social-btn github" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 SiraajHub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

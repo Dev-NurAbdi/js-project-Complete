@@ -1,0 +1,626 @@
+
+   /* 1. VARIABLES & THEMES (Deep Purple) */
+:root {
+    --primary-color: #7c3aed; /* Guduud xariir ah */
+    --bg-color: #faf5ff;
+    --card-bg: #ffffff;
+    --text-main: #2e1065;
+    --text-muted: #7e22ce;
+    --border-color: #f3e8ff;
+}
+
+body.dark-theme {
+    --bg-color: #120024; /* Guduud madow ah */
+    --card-bg: #240046;
+    --text-main: #f3e8ff;
+    --text-muted: #c084fc;
+    --border-color: #5a189a;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================================================
+   3. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: var(--text-main);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.dark-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 🍔 HAMBURGER MENU STYLES */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-main);
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   4. HERO SECTION
+   ========================================================================== */
+.main-section {
+    padding: 40px 0;
+}
+
+.hero-section {
+    text-align: center;
+    background: linear-gradient(135deg, #042f2e 0%, #0f766e 50%, #115e59 100%);
+    padding: 60px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(15, 118, 110, 0.15);
+}
+
+.hero-section h2 {
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.hero-section .bismillah {
+    font-size: 48px;
+    color: #2dd4bf;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 17px;
+    color: #ccfbf1;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   5. COMPONENTS (SEARCH, BUTTONS, CARDS)
+   ========================================================================== */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+}
+
+.search-box button, 
+.see-all-btn, 
+.send-btn, 
+.close-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.see-all-btn {
+    display: block;
+    margin: 30px auto;
+    background: none;
+    color: var(--text-main);
+    font-size: 20px;
+}
+
+.see-all-btn:hover {
+    color: var(--primary-color);
+}
+
+/* SURAH GRID & CARDS */
+.surah-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.surah-card {
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.surah-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.surah-card h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* SINGLE VIEW BOX & VERSES */
+.single-view-box {
+    display: none;
+    background-color: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.close-btn {
+    background-color: #ef4444;
+    margin-bottom: 20px;
+}
+
+.surah-main-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.verses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verse-box {
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px 0;
+}
+
+.arabic-text {
+    font-size: 28px;
+    line-height: 2;
+    text-align: right;
+    direction: rtl;
+    color: #000000;
+    font-weight: 600;
+}
+
+body.dark-theme .arabic-text {
+    color: #ffffff;
+}
+
+.somali-text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    direction: ltr;
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   6. TABLES (SCHEDULE)
+   ========================================================================== */
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-table th, 
+.schedule-table td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 16px;
+}
+
+.schedule-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ==========================================================================
+   7. CONTACT SECTION
+   ========================================================================== */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+}
+
+.error-msg {
+    color: #ef4444;
+    display: none;
+}
+
+.success-msg {
+    color: #10b981;
+    display: none;
+}
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border-color);
+    margin: 40px 0;
+}
+
+/* ==========================================================================
+   8. MODERN PRO FOOTER STYLES
+   ========================================================================== */
+.pro-footer {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    padding: 60px 0 20px 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.2fr 1fr;
+    gap: 30px;
+    padding: 0 20px 40px 20px;
+}
+
+.footer-brand .footer-logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.brand-desc {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.footer-title {
+    font-size: 18px;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 600;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 35px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Quick Links Custom Styling */
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 12px;
+}
+
+.footer-links-list a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.link-icon {
+    font-size: 10px;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+}
+
+.footer-links-list a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.footer-links-list a:hover .link-icon {
+    transform: translateX(3px);
+}
+
+/* Let's Talk Box Items */
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14.5px;
+    color: var(--text-muted);
+}
+
+.contact-item a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+.contact-icon {
+    font-size: 16px;
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+.wa-color {
+    color: #25D366;
+}
+
+.wa-chat {
+    font-weight: 500;
+    color: #25D366 !important;
+}
+
+.hours-text {
+    font-size: 13.5px;
+}
+
+/* Social Media Network Icons */
+.social-text {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.social-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.social-btn:hover {
+    transform: translateY(-4px);
+    color: white;
+}
+
+.social-btn.facebook:hover {
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-btn.whatsapp:hover {
+    background-color: #25D366;
+    border-color: #25D366;
+}
+
+.social-btn.github:hover {
+    background-color: #24292e;
+    border-color: #24292e;
+}
+
+/* Copyright Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.pro-footer .copyright {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    border-top: none;
+    padding-top: 0;
+}
+
+/* ==========================================================================
+   9. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: var(--card-bg);
+        border-bottom: 2px solid var(--border-color);
+        padding: 20px;
+        gap: 20px;
+        z-index: 99;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 70%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-section h2 {
+        font-size: 24px;
+    }
+
+    .hero-section .bismillah {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
