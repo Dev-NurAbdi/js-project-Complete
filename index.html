@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiraajHub - Home</title>
+    <title>SiraajHub</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -18,7 +18,6 @@
                 <span></span>
                 <span></span>
             </div>
-
             <nav id="nav-menu">
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="tafsiir.html" class="nav-link">Tafsiir</a>
@@ -29,9 +28,7 @@
             </nav>
         </div>
     </header>
-
     <main class="container">
-        
         <section id="home-section" class="main-section">
             <div class="hero-section">
                 <h2>Your Digital Companion For Reading <br> and Understanding the Quran.</h2>
@@ -39,35 +36,28 @@
                 <p>Welcome to a modern Islamic learning platform <br> where you can read the Qur’an, explore its Tafsir, and follow a structured study plan. <br> Learn with ease, grow in understanding, and stay consistent every day.</p>
             </div>
         </section>
-
         <hr class="section-divider">
-
         <section id="tafsiir-section" class="main-section">
             <h2 class="section-title">The Holy Quran (Tafsiir)</h2>
             <div class="search-box">
                 <input type="text" id="tafsiir-search" placeholder="search Surah of tafsiir...">
                 <button onclick="filterSurahs('tafsiir')">search</button>
             </div>
-            
             <div id="tafsiir-grid" class="surah-grid"></div>
             <button class="see-all-btn" id="btn-see-tafsiir" onclick="showAllSurahs('tafsiir')">See All</button>
-
             <div id="single-tafsiir-container" class="single-view-box">
                 <button class="close-btn" onclick="closeView('tafsiir')">Xir Tafsiirka</button>
                 <h2 id="tafsiir-surah-title" class="surah-main-title"></h2>
                 <div id="tafsiir-verses-container" class="verses-list"></div>
             </div>
         </section>
-
         <hr class="section-divider">
-
         <section id="read-section" class="main-section">
             <h2 class="section-title">Read the Holy Quran</h2>
             <div class="search-box">
                 <input type="text" id="read-search" placeholder="Search Surah of read...">
                 <button onclick="filterSurahs('read')">search</button>
             </div>
-
             <div id="read-grid" class="surah-grid"></div>
             <button class="see-all-btn" id="btn-see-read" onclick="showAllSurahs('read')">See All</button>
 
@@ -117,9 +107,7 @@
                 </form>
             </div>
         </section>
-
     </main>
-
     <footer class="pro-footer">
         <div class="footer-container">
             
@@ -127,7 +115,6 @@
                 <a href="index.html" class="footer-logo">SiraajHub</a>
                 <p class="brand-desc">We are dedicated to providing a seamless digital companion experience for reading, understanding, and memorizing the Holy Quran.</p>
             </div>
-
             <div class="footer-box">
                 <h4 class="footer-title">Quick Links</h4>
                 <ul class="footer-links-list">
@@ -138,7 +125,6 @@
                     <li><a href="contact.html"><i class="fa-solid fa-chevron-right link-icon"></i> Contact</a></li>
                 </ul>
             </div>
-
             <div class="footer-box info-box">
                 <h4 class="footer-title">Let's talk</h4>
                 <div class="contact-item">
@@ -162,7 +148,6 @@
                     <span class="hours-text">Mon - Fri | 8:00 AM - 6:00 PM</span>
                 </div>
             </div>
-
             <div class="footer-box">
                 <h4 class="footer-title">Follow Us</h4>
                 <p class="social-text">Stay connected with us across our social handles.</p>
@@ -178,14 +163,11 @@
                     </a>
                 </div>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <p class="copyright">&copy; 2026 SiraajHub. All Rights Reserved.</p>
         </div>
     </footer>
-
     <script src="app.js"></script>
 </body>
 </html>
