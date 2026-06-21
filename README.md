@@ -1,7 +1,5 @@
 # 📖 SiraajHub
-<p alt="center">
-  <img src="./assets/siraajhub-mockup.png" alt="SiraajHub Mockup" width="100%">
-</p>
+<img src="Assets/mockup-main.png" alt="SiraajHub Mockup" width="100%"/>
 ## 🌟 Overview
 **SiraajHub** is a modern Quran learning platform designed to help users read, understand, and memorize the Holy Quran.
 
@@ -67,7 +65,7 @@ SiraajHub/
 ├── app.js
 │
 └── assets/
-    └── siraajhub-mockup.png
+    └── ![SiraajHub Mockup](Assets/mockup-main.png)
 ```
 ---
 ## 🚀 Live Demo
