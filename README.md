@@ -1,7 +1,5 @@
 # 📖 SiraajHub
-<p style="text-align:center;">
-  <img src="./assets/siraajhub-mockup.png" alt="SiraajHub Mockup" width="100%">
-</p>
+![alt text](<ChatGPT Image Jun 21, 2026, 07_59_27 AM.png>)
 ## 🌟 Overview
 **SiraajHub** is a modern Quran learning platform designed to help users read, understand, and memorize the Holy Quran.
 
