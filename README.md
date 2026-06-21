@@ -66,25 +66,28 @@ SiraajHub/
 │
 └── assets/
     └── Assets/mockup-main.png
-```
+
+
 ---
----
 
-🚀 Live Demo
+## 🚀 Live Demo
 
-🔗 View the Live Website
+🔗 **View the Live Website**
 
-👉 https://js-project-complete.vercel.app
+👉 **[Visit SiraajHub](https://js-project-complete.vercel.app)**
 
 Experience SiraajHub directly in your browser without any installation.
 
 ---
 
 ## 👨‍💻 Author
-Nur Abdi
+
+**Nur Abdi**
+
 Frontend Developer passionate about building modern and user-friendly web applications.
-🐙 GitHub: https://github.com/Dev-NurAbdi
-📧 Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
+
+* 🐙 GitHub: [Dev-NurAbdi](https://github.com/Dev-NurAbdi)
+* 📧 Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
 
 ---
 
@@ -105,3 +108,4 @@ Feel free to explore, learn from, and improve upon the code.
 ---
 
 ⭐ If you like this project, consider giving it a star on GitHub.
+
