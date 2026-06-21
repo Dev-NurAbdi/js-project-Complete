@@ -1,5 +1,5 @@
 # 📖 SiraajHub
-<p align="center">
+<p style="text-align:center;">
   <img src="./assets/siraajhub-mockup.png" alt="SiraajHub Mockup" width="100%">
 </p>
 ## 🌟 Overview
