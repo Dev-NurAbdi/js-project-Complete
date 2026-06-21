@@ -1,7 +1,7 @@
 # 📖 SiraajHub
 <img src="Assets/mockup-main.png" alt="SiraajHub Mockup" width="100%"/>
-## 🌟 Overview
-**SiraajHub** is a modern Quran learning platform designed to help users read, understand, and memorize the Holy Quran.
+🌟 Overview
+SiraajHub is a modern Quran learning platform designed to help users read, understand, and memorize the Holy Quran.
 
 The platform provides:
 * 📖 Read the Holy Quran
@@ -65,20 +65,46 @@ SiraajHub/
 ├── app.js
 │
 └── assets/
-    └── ![SiraajHub Mockup](Assets/mockup-main.png)
+    └── Assets/mockup-main.png
 ```
 ---
+---
+
 ## 🚀 Live Demo
 
-Add your live website link here:
+🔗 **View the Live Website**
 
-```text
-https://your-vercel-link.vercel.app
+👉 **https://your-vercel-link.vercel.app**
+
+Experience SiraajHub directly in your browser without any installation.
+
+---
+
 ## 👨‍💻 Author
-**Nur Abdi**
-* GitHub: https://github.com/Dev-NurAbdi
-* Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
+
+### Nur Abdi
+
+Frontend Developer passionate about building modern and user-friendly web applications.
+
+* 🐙 GitHub: https://github.com/Dev-NurAbdi
+* 📧 Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
+
+---
+
 ## 📜 License
-This project is open-source and available for learning and educational purposes.
 
+This project is released for educational and learning purposes.
 
+Feel free to explore, learn from, and improve upon the code.
+
+---
+
+### 🤲 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+
+> “The best among you are those who learn the Quran and teach it.”
+>
+> **— Prophet Muhammad ﷺ**
+
+---
+
+⭐ If you like this project, consider giving it a star on GitHub.
