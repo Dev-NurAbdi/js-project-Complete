@@ -70,24 +70,21 @@ SiraajHub/
 ---
 ---
 
-## 🚀 Live Demo
+🚀 Live Demo
 
-🔗 **View the Live Website**
+🔗 View the Live Website
 
-👉 **https://your-vercel-link.vercel.app**
+👉 https://js-project-complete.vercel.app
 
 Experience SiraajHub directly in your browser without any installation.
 
 ---
 
 ## 👨‍💻 Author
-
-### Nur Abdi
-
+Nur Abdi
 Frontend Developer passionate about building modern and user-friendly web applications.
-
-* 🐙 GitHub: https://github.com/Dev-NurAbdi
-* 📧 Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
+🐙 GitHub: https://github.com/Dev-NurAbdi
+📧 Email: [Nurabdi2776@gmail.com](mailto:Nurabdi2776@gmail.com)
 
 ---
 
